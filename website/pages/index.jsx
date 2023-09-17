@@ -179,7 +179,7 @@ export default function Home() {
         {currentAccount ? (
           <div>
             <form>
-              <div class="formgroup">
+              <div className="formgroup">
                 <label>
                   Name
                 </label>
@@ -193,7 +193,7 @@ export default function Home() {
                   />
               </div>
               <br/>
-              <div class="formgroup">
+              <div className="formgroup">
                 <label>
                   Send Taufeeq a message
                 </label>
@@ -227,9 +227,9 @@ export default function Home() {
 
       {currentAccount && (memos.map((memo, idx) => {
         return (
-          <div key={idx} style={{border:"2px solid", "border-radius":"5px", padding: "5px", margin: "5px"}}>
-            <p style={{"font-weight":"bold"}}>"{memo.message}"</p>
-            <p>From: {memo.name} at {memo.timestamp.toString()}</p>
+          <div key={idx} style={{border:"2px solid", "borderRadius":"5px", padding: "5px", margin: "5px"}}>
+            <p style={{"fontWeight":"bold"}}>"{memo.message}"</p>
+            <p style={{"fontWeight":"bold"}}>&quot;{memo.message}&quot;</p>
           </div>
         )
       }))}
