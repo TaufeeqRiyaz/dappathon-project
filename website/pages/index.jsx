@@ -229,7 +229,7 @@ export default function Home() {
         return (
           <div key={idx} style={{border:"2px solid", "borderRadius":"5px", padding: "5px", margin: "5px"}}>
             <p style={{"fontWeight":"bold"}}>"{memo.message}"</p>
-            <p style={{"fontWeight":"bold"}}>&quot;{memo.message}&quot;</p>
+            <p style={{"fontWeight":"bold"}}>{memo.message}</p>
           </div>
         )
       }))}
